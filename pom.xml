@@ -27,6 +27,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -36,29 +45,50 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.2</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctor-maven-plugin</artifactId>
+						<version>2.2.2</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
 				<groupId>org.asciidoctor</groupId>
 				<artifactId>asciidoctor-maven-plugin</artifactId>
 				<version>2.2.2</version>
+
 				<executions>
 					<execution>
-						<id>generate-docs</id>
-						<phase>prepare-package</phase>
+						<id>output-html</id>
+						<phase>package</phase>
 						<goals>
 							<goal>process-asciidoc</goal>
 						</goals>
-						<configuration>
-							<sourceDocumentName>index.adoc</sourceDocumentName>
-							<backend>html</backend>
-							<attributes>
-								<snippets>${project.build.directory}/snippets</snippets>
-							</attributes>
-							<sourceDirectory>src/main/doc</sourceDirectory>
-							<outputDirectory>target/static/docs</outputDirectory>
-						</configuration>
 					</execution>
 				</executions>
+
+				<configuration>
+					<sourceDirectory>src/main/doc</sourceDirectory>
+					<outputDirectory>src/main/resources/templates</outputDirectory>
+
+					<backend>html</backend>
+				</configuration>
+
 			</plugin>
 		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/doc/images</directory>
+				<targetPath>resources/templates/images</targetPath>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+
 	</build>
 
 </project>
