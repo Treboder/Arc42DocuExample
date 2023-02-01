@@ -80,7 +80,7 @@
 				<executions>
 					<execution>
 						<id>copy-resource-one</id>
-						<phase>generate-sources</phase>
+						<phase>verify</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
