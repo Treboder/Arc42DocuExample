@@ -1,6 +1,6 @@
-# Getting Started
-
 ![pages-build-deployment](https://github.com/Treboder/Arc42DocuExample/actions/workflows/pages/pages-build-deployment/badge.svg)
+
+# Getting Started
 
 This project demonstrates how to deploy a [arc42](https://arc42.org/) system documentation   
 to [Github Pages](https://pages.github.com/)
