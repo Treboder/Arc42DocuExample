@@ -9,8 +9,12 @@ but also delivers the docu via [http://localhost:8080/docs/index.html](http://lo
 We also deploy the docu to [Github Pages](https://pages.github.com/). 
 
 The documentation is maintained as [asciidoc](https://asciidoc.org/) with *.adoc files.  
-Maven via 'mvn package' will create static html from asciidoc.
+'mvn asciidoctor:process-asciidoc' create static html from asciidoc.
+Then 'mvn package' copies the files to classpath, from where the app serves the files.  
 Github Pages finally deploys the static html to [https://treboder.github.io/Arc42DocuExample/](https://treboder.github.io/Arc42DocuExample/)
+
+### ToDo 
+Avoid to run 'mvn package' twice, instead generate and copy the the htmls in one run.  
 
 ### Reference Documentation
 For further reference, please consider the following sections:
