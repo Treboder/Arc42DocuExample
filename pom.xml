@@ -73,21 +73,21 @@
 
 				<configuration>
 					<sourceDirectory>src/main/doc</sourceDirectory>
-					<outputDirectory>src/main/resources/templates</outputDirectory>
-
+<!--					<outputDirectory>src/main/resources/templates</outputDirectory>-->
+					<outputDirectory>docs</outputDirectory>
 					<backend>html</backend>
 				</configuration>
 
 			</plugin>
 		</plugins>
 
-		<resources>
-			<resource>
-				<directory>src/main/doc/images</directory>
-				<targetPath>resources/templates/images</targetPath>
-				<filtering>false</filtering>
-			</resource>
-		</resources>
+<!--		<resources>-->
+<!--			<resource>-->
+<!--				<directory>src/main/doc/images</directory>-->
+<!--				<targetPath>resources/templates/images</targetPath>-->
+<!--				<filtering>false</filtering>-->
+<!--			</resource>-->
+<!--		</resources>-->
 
 	</build>
 
