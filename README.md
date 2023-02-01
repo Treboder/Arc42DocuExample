@@ -1,23 +1,19 @@
 # Getting Started
 
-This is an attempt to use [Asciidoctor](https://asciidoctor.org/) 
-together with [Thymeleaf](https://www.thymeleaf.org/) 
-in order to deploy a system documentation structured as [arc42](https://arc42.org/)
+This project demonstrates how to deploy a [arc42](https://arc42.org/) system documentation   
+to [Github Pages](https://pages.github.com/)
+via [Asciidoctor](https://asciidoctor.org/) 
 along with an exemplary [Spring Boot](https://spring.io/guides/gs/spring-boot/) application.  
-
-The idea to deploy the app together with its documentation is based on:
-* documentation is maintained as ascidoc  
-* 'mvn package' will create html from ascidoc, and copy files to resources/templates
-* Thymeleaf delivers html-type documentation via [http://localhost:8080/doc](http://localhost:8080/doc)
-
-### Next step (and the reason why this approach didnt work so far)
-... would be to get images to be rendered, which is currently not the case.  
+The app basically consists of a single controller expsosing the endpoint :8080/hello with a welcome message.
+The documentation is maintained as [asciidoc](https://asciidoc.org/) with *.adoc files.  
+Maven via 'mvn package' will create static html from asciidoc.
+Github Pages finally deploys the static html to [https://treboder.github.io/Arc42DocuExample/](https://treboder.github.io/Arc42DocuExample/)
 
 ### Reference Documentation
 For further reference, please consider the following sections:
 
+* [creating-a-github-pages-site](https://docs.github.com/de/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 * [Asciidoctor](https://asciidoctor.org/)
-* [Thymeleaf](https://www.thymeleaf.org/)
 * [arc42](https://arc42.org/) 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.0.2/maven-plugin/reference/html/)
