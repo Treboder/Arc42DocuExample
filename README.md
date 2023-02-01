@@ -2,11 +2,12 @@
 
 ![pages-build-deployment](https://github.com/Treboder/Arc42DocuExample/actions/workflows/pages/pages-build-deployment/badge.svg)
 
-This project demonstrates how to deploy a [arc42](https://arc42.org/) system documentation   
-to [Github Pages](https://pages.github.com/)
-via [Asciidoctor](https://asciidoctor.org/) 
-along with an exemplary [Spring Boot](https://spring.io/guides/gs/spring-boot/) application.  
-The app basically consists of a single controller expsosing the endpoint :8080/hello with a welcome message.
+This project demonstrates how to provide a [arc42](https://arc42.org/) system documentation via [Asciidoctor](https://asciidoctor.org/)    
+for an exemplary [Spring Boot](https://spring.io/guides/gs/spring-boot/) application.
+The app basically consists of a single controller exposing the endpoint :8080/hello with a welcome message only, 
+but also delivers the docu via [http://localhost:8080/docs/index.html](http://localhost:8080/docs/index.html).
+We also deploy the docu to [Github Pages](https://pages.github.com/). 
+
 The documentation is maintained as [asciidoc](https://asciidoc.org/) with *.adoc files.  
 Maven via 'mvn package' will create static html from asciidoc.
 Github Pages finally deploys the static html to [https://treboder.github.io/Arc42DocuExample/](https://treboder.github.io/Arc42DocuExample/)
@@ -14,6 +15,8 @@ Github Pages finally deploys the static html to [https://treboder.github.io/Arc4
 ### Reference Documentation
 For further reference, please consider the following sections:
 
+* [how-can-i-serve-static-html-from-spring-boot](https://stackoverflow.com/questions/42393211/how-can-i-serve-static-html-from-spring-boot)
+* [maven-copy-files](https://www.baeldung.com/maven-copy-files)
 * [creating-a-github-pages-site](https://docs.github.com/de/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 * [Asciidoctor](https://asciidoctor.org/)
 * [arc42](https://arc42.org/) 
