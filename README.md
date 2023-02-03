@@ -15,6 +15,8 @@ Github Pages finally deploys the static html to [https://treboder.github.io/Arc4
 ### Reference Documentation
 For further reference, please consider the following sections:
 
+* [Arc42 Templates](https://github.com/arc42/arc42-template)
+* [Arc42 Examples](https://arc42.org/examples)
 * [maven lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 * [how-can-i-serve-static-html-from-spring-boot](https://stackoverflow.com/questions/42393211/how-can-i-serve-static-html-from-spring-boot)
 * [maven-copy-files](https://www.baeldung.com/maven-copy-files)
