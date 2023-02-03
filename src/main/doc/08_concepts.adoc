@@ -1,8 +1,9 @@
-ifndef::imagesdir[:imagesdir: ./images]
+ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-concepts]]
 == Cross-cutting Concepts
 
+image::08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
 
 [role="arc42help"]
 ****

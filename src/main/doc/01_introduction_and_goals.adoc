@@ -1,4 +1,4 @@
-ifndef::imagesdir[:imagesdir: ./images]
+ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-introduction-and-goals]]
 == Introduction and Goals
@@ -42,6 +42,8 @@ See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 docum
 ****
 
 === Quality Goals
+
+image::01_2_iso-25010-topics-EN.drawio.png["Categories of Quality Requirements"]
 
 [role="arc42help"]
 ****
