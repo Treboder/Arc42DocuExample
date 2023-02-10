@@ -8,9 +8,11 @@ The app basically consists of a single controller exposing the endpoint [http://
 but also delivers the docu via [http://localhost:8080/docs/index.html](http://localhost:8080/docs/index.html).
 We also deploy the docu to [Github Pages](https://pages.github.com/). 
 
-The documentation is maintained as [asciidoc](https://asciidoc.org/) with *.adoc files.  
-````mvn package verify```` creates static html from asciidoc first (package phase), then copies the files to classpath (verify phase).
-Github Pages finally deploys the static html to [https://treboder.github.io/Arc42DocuExample/](https://treboder.github.io/Arc42DocuExample/)
+The documentation is maintained as [asciidoc](https://asciidoc.org/) with *.adoc files.
+Those files reside in [src/docs/main/doc/](src/docs/main/doc/).
+Maven-command ````mvn package verify````creates static html from asciidoc first (package phase) with the generated HTMLs placed in [docs](docs/) as the result. 
+The Maven build also copies the files to [src/main/resources/static/](src/main/resources/static/) (verify phase) in order to be used from the running application.
+Github Pages also deploys the static HTML files to [https://treboder.github.io/Arc42DocuExample/](https://treboder.github.io/Arc42DocuExample/)
 
 ### Reference Documentation
 For further reference, please consider the following sections:
