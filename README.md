@@ -1,6 +1,7 @@
-# Getting Started
-
+[![Build Maven Project](https://github.com/Treboder/Arc42DocuExample/actions/workflows/mave-build.yml/badge.svg)](https://github.com/Treboder/Arc42DocuExample/actions/workflows/mave-build.yml)
 ![pages-build-deployment](https://github.com/Treboder/Arc42DocuExample/actions/workflows/pages/pages-build-deployment/badge.svg)
+
+# Arc42 Docu Example
 
 This project demonstrates how to provide a [arc42](https://arc42.org/) system documentation via [Asciidoctor](https://asciidoctor.org/)    
 for an exemplary [Spring Boot](https://spring.io/guides/gs/spring-boot/) application.
