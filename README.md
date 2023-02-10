@@ -1,4 +1,4 @@
-[![Build Maven Project](https://github.com/Treboder/Arc42DocuExample/actions/workflows/mave-build.yml/badge.svg)](https://github.com/Treboder/Arc42DocuExample/actions/workflows/mave-build.yml)
+[![Build Maven Project](https://github.com/Treboder/Arc42DocuExample/actions/workflows/maven-build.yml/badge.svg)](https://github.com/Treboder/Arc42DocuExample/actions/workflows/maven-build.yml)
 ![pages-build-deployment](https://github.com/Treboder/Arc42DocuExample/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 # Arc42 Docu Example
